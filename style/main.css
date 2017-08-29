@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: "Lato";
+}
+
+.container {
+  width: 1398px;
+  height: 100%;
+  margin: auto;
+}
+
+.call-request-btn {
+  margin-right: 50px;
+  height: 45px;
+  border-radius: 12px;
+  font-size: 14px;
+  padding: 0 22px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1px;
+
+  background: #0bd3d1;
+  color: white;
+}
+
+header {
+  height: 110px;
+  background: white;
+}
+
+header .vcard {
+  margin: 0 70px;
+  height: 100%;
+  font-weight: bold;
+  font-size: 18px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .vcard .fn.org {
+  font-family: "Muller";
+  font-weight: 900;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+header .vcard .adr .locality {
+  display: block;
+}
+
+header .vcard * {
+  position: relative;
+}
+header .vcard *:before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 4px;
+  left: -30px;
+}
+
+header .vcard .workhours:before {
+  background: url("../img/icon/icon-time.svg") center no-repeat;
+}
+header .vcard .adr:before {
+  background: url("../img/icon/icon-geo.svg") center no-repeat;
+
+}
+header .vcard .tel:before {
+  background: url("../img/icon/icon-smartphone.svg") center no-repeat;
+}
+
+#main-banner {
+  background: url("../img/header-background.png") center no-repeat;
+  color: white;
+}
+
+#main-banner .container {
+  padding: 180px 0 180px 70px;
+  box-sizing: border-box;
+}
+
+#main-banner h1 {
+  font-family: "Muller";
+  font-weight: 900;
+  font-size: 66px;
+  line-height: 78px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#main-banner h2 {
+  font-family: "Lato";
+  font-weight: lighter;
+  line-height: 24px;
+  font-size: 39px;
+  margin: 0;
+}
+
+#main-banner #call-request-form {
+  margin-top: 50px;
+  display: inline-block;
+  letter-spacing: 20px;
+
+  font-size: 28px;
+  font-family: "Lato";
+  font-weight: normal;
+}
+
+#main-banner #call-request-form span {
+  display: inline-block;
+}
+#main-banner #call-request-form span label {
+  display: block;
+  margin-bottom: 12px;
+  letter-spacing: normal;
+}
+
+#main-banner input {
+  font-size: 38px;
+  width: 302px;
+  outline: none;
+}
+
+#main-banner button {
+  padding: 0 20px;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}

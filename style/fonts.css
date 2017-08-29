@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Muller";
+  font-weight: 900;
+  src: url("../font/Fontfabric - MullerBlack.otf");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: normal;
+  src: url("../font/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: bold;
+  src: url("../font/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: lighter;
+  src: url("../font/Lato-Light.ttf");
+}
