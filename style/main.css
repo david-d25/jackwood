@@ -1,12 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Lato";
 }
 
 .container {
-  width: 1398px;
-  height: 100%;
-  margin: auto;
+  width: 1400px;
+  margin: 0 auto;
 }
 
 .call-request-btn {
@@ -26,13 +29,12 @@ body {
 }
 
 header {
-  height: 110px;
   background: white;
 }
 
 header .vcard {
   margin: 0 70px;
-  height: 100%;
+  height: 110px;
   font-weight: bold;
   font-size: 18px;
 
@@ -58,24 +60,12 @@ header .vcard * {
   position: relative;
 }
 header .vcard *:before {
-  display: block;
-  content: "";
+  opacity: .25;
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 4px;
-  left: -30px;
-}
-
-header .vcard .workhours:before {
-  background: url("../img/icon/icon-time.svg") center no-repeat;
-}
-header .vcard .adr:before {
-  background: url("../img/icon/icon-geo.svg") center no-repeat;
-
-}
-header .vcard .tel:before {
-  background: url("../img/icon/icon-smartphone.svg") center no-repeat;
+  top: 2px;
+  left: -25px;
 }
 
 #main-banner {
@@ -85,7 +75,6 @@ header .vcard .tel:before {
 
 #main-banner .container {
   padding: 180px 0 180px 70px;
-  box-sizing: border-box;
 }
 
 #main-banner h1 {
@@ -98,7 +87,6 @@ header .vcard .tel:before {
 }
 
 #main-banner h2 {
-  font-family: "Lato";
   font-weight: lighter;
   line-height: 24px;
   font-size: 39px;
@@ -111,7 +99,6 @@ header .vcard .tel:before {
   letter-spacing: 20px;
 
   font-size: 28px;
-  font-family: "Lato";
   font-weight: normal;
 }
 
@@ -135,4 +122,37 @@ header .vcard .tel:before {
   display: block;
   margin: auto;
   margin-top: 30px;
+}
+
+#our-solutions .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 120px;
+}
+
+.solution {
+  margin-bottom: 15px;
+}
+
+.solution-img {
+  display: block;
+}
+.solution-name {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  color: #201600;
+  font-weight: bold;
+  margin: .8em 0;
+}
+
+.hero-title {
+  font-weight: bold;
+  font-size: 48px;
+  color: #201600;
+  text-align: center;
+  margin: 80px auto;
 }

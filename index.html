@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
   <title>Jackwood</title>
   <meta charset="utf-8">
 
+  <link rel="stylesheet" type="text/css" href="style/lib/magnific-popup.css">
+
   <link rel="stylesheet" type="text/css" href="style/fonts.css">
+  <link rel="stylesheet" type="text/css" href="style/icons.css">
   <link rel="stylesheet" type="text/css" href="style/main.css">
+
+  <script src="js/lib/jquery-3.2.1.min.js" defer></script>
+  <script src="js/lib/handlebars-v4.0.10.js" defer></script>
+  <script src="js/lib/jquery.magnific-popup.min.js" defer></script>
+
+  <script src="js/main.js"></script>
 
 </head>
 <body>
@@ -14,12 +23,12 @@
 
       <div class="vcard">
         <span class="fn org">Jackwood</span>
-        <span class="workhours">с 9:00 до 21:00<br>без выходных</span>
-        <span class="adr">
+        <span class="workhours icon-time">с 9:00 до 21:00<br>без выходных</span>
+        <span class="adr icon-geo">
           <span class="locality">г. Минск</span>
           <span class="street-address">ул. Пионерская, 9</span>
         </span>
-        <span class="tel">+375 44 736-20-01</span>
+        <span class="tel icon-smartphone">+375 44 736-20-01</span>
         <button class="call-request-btn">Вам позвонить?</button>
       </div>
 
@@ -50,6 +59,24 @@
       </form>
 
     </div>
+  </div>
+
+  <div id="our-solutions">
+    <div class="hero-title">Наши решения<br>для вашего дома</div>
+    <div class="container">
+      
+      <script type="text/x-handlebars-template" id="solution-template">
+        <div class="solution">
+          <img class="solution-img" src="img/our-solutions/solution-{{number}}.jpg" alt="{{name}}">
+          <div class="solution-name">{{name}}</div>
+        </div>
+      </script>
+
+    </div>
+  </div>
+
+  <div id="recommendation">
+    
   </div>
 </body>
 </html>
