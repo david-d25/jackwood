@@ -1,3 +1,5 @@
+/* ************** START COMMON ************** */
+
 * {
   box-sizing: border-box;
 }
@@ -12,7 +14,7 @@ body {
   margin: 0 auto;
 }
 
-.call-request-btn {
+.request-call-btn {
   margin-right: 50px;
   height: 45px;
   border-radius: 12px;
@@ -27,6 +29,47 @@ body {
   background: #0bd3d1;
   color: white;
 }
+
+.section-title {
+  font-weight: bold;
+  font-size: 48px;
+  color: #201600;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.banner .bigtext {
+  font-family: "Muller";
+  font-weight: 900;
+  font-size: 66px;
+  line-height: 78px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.banner .request-call-form {
+  margin-top: 50px;
+  display: inline-block;
+  letter-spacing: 20px;
+
+  font-size: 28px;
+  font-weight: normal;
+}
+.banner .request-call-form span {
+  display: inline-block;
+}
+.banner .request-call-form span label {
+  display: block;
+  margin-bottom: 12px;
+  letter-spacing: normal;
+}
+
+/* ************** END COMMON ************** */
+/* ************** START HEADER ************** */
 
 header {
   background: white;
@@ -68,22 +111,15 @@ header .vcard *:before {
   left: -25px;
 }
 
+/* ************** END HEADER ************** */
+/* ************** START MAIN-BANNER ************** */
+
 #main-banner {
-  background: url("../img/header-background.png") center no-repeat;
-  color: white;
+  background-image: url("../img/header-background.png");
 }
 
 #main-banner .container {
   padding: 180px 0 180px 70px;
-}
-
-#main-banner h1 {
-  font-family: "Muller";
-  font-weight: 900;
-  font-size: 66px;
-  line-height: 78px;
-  text-transform: uppercase;
-  margin: 0;
 }
 
 #main-banner h2 {
@@ -91,24 +127,6 @@ header .vcard *:before {
   line-height: 24px;
   font-size: 39px;
   margin: 0;
-}
-
-#main-banner #call-request-form {
-  margin-top: 50px;
-  display: inline-block;
-  letter-spacing: 20px;
-
-  font-size: 28px;
-  font-weight: normal;
-}
-
-#main-banner #call-request-form span {
-  display: inline-block;
-}
-#main-banner #call-request-form span label {
-  display: block;
-  margin-bottom: 12px;
-  letter-spacing: normal;
 }
 
 #main-banner input {
@@ -124,12 +142,15 @@ header .vcard *:before {
   margin-top: 30px;
 }
 
+/* ************** END MAIN-BANNER ************** */
+/* ************** START SOLUTIONS ************** */
+
 #our-solutions .container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 120px;
+  padding: 0 120px 100px 120px;
 }
 
 .solution {
@@ -149,10 +170,26 @@ header .vcard *:before {
   margin: .8em 0;
 }
 
-.hero-title {
-  font-weight: bold;
-  font-size: 48px;
-  color: #201600;
-  text-align: center;
-  margin: 80px auto;
+/* ************** END SOLUTIONS ************** */
+/* ************** START RECOMMENDATION ************** */
+
+#recommendation {
+  background: #efefef;
+}
+
+#recommendation .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 120px 70px 120px;
+}
+
+#recommendation .girl-looking {
+  margin-bottom: 50px;
+}
+
+.recommendation-text {
+  font-size: 18px;
+  max-width: 510px;
 }

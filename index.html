@@ -29,23 +29,23 @@
           <span class="street-address">ул. Пионерская, 9</span>
         </span>
         <span class="tel icon-smartphone">+375 44 736-20-01</span>
-        <button class="call-request-btn">Вам позвонить?</button>
+        <button class="request-call-btn">Вам позвонить?</button>
       </div>
 
     </div>
   </header>
 
-  <div id="main-banner">
+  <div id="main-banner" class="banner">
     <div class="container">
 
-      <h1>
+      <h1 class="bigtext">
         кухни,<br>
         шкафы-купе,<br>
         корпусная мебель
       </h1>
       <h2>На заказ по индивидуальным проектам</h2>
 
-      <form id="call-request-form">
+      <form class="request-call-form">
         <span>
           <label for="fname">Ваше имя</label>
           <input type="text" id="fname" name="first-name">
@@ -55,14 +55,14 @@
           <label for="tel">Номер телефона</label>
           <input type="tel" id="tel" name="tel">
         </span>
-        <button type="submit" class="call-request-btn">заказать звонок</button>
+        <button type="submit" class="request-call-btn">заказать звонок</button>
       </form>
 
     </div>
   </div>
 
   <div id="our-solutions">
-    <div class="hero-title">Наши решения<br>для вашего дома</div>
+    <div class="section-title">Наши решения<br>для вашего дома</div>
     <div class="container">
       
       <script type="text/x-handlebars-template" id="solution-template">
@@ -76,7 +76,18 @@
   </div>
 
   <div id="recommendation">
-    
+    <div class="section-title">Рекомендация</div>
+    <div class="container">
+
+      <img src="img/recommendation/main-img.jpg" alt="Девушка, смотрящая на тебя" class="girl-looking">
+      <p class="recommendation-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+      </p>
+      <img src="img/recommendation/recommendation-1.jpg" class="recommendation-img">
+      <img src="img/recommendation/recommendation-2.jpg" class="recommendation-img">
+      <img src="img/recommendation/recommendation-3.jpg" class="recommendation-img">
+
+    </div>
   </div>
 </body>
 </html>
