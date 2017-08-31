@@ -16,6 +16,7 @@ body {
 
 .request-call-btn {
   margin-right: 50px;
+  width: 200px;
   height: 45px;
   border-radius: 12px;
   font-size: 14px;
@@ -25,6 +26,7 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   letter-spacing: 1px;
+  font-weight: bold;
 
   background: #0bd3d1;
   color: white;
@@ -52,7 +54,7 @@ body {
   margin: 0;
 }
 .banner .request-call-form {
-  margin-top: 50px;
+  margin-top: 45px;
   display: inline-block;
   letter-spacing: 20px;
 
@@ -66,6 +68,16 @@ body {
   display: block;
   margin-bottom: 12px;
   letter-spacing: normal;
+}
+.banner input {
+  font-size: 38px;
+  width: 302px;
+  outline: none;
+}
+.banner button {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
 }
 
 /* ************** END COMMON ************** */
@@ -129,19 +141,6 @@ header .vcard *:before {
   margin: 0;
 }
 
-#main-banner input {
-  font-size: 38px;
-  width: 302px;
-  outline: none;
-}
-
-#main-banner button {
-  padding: 0 20px;
-  display: block;
-  margin: auto;
-  margin-top: 30px;
-}
-
 /* ************** END MAIN-BANNER ************** */
 /* ************** START SOLUTIONS ************** */
 
@@ -192,4 +191,16 @@ header .vcard *:before {
 .recommendation-text {
   font-size: 18px;
   max-width: 510px;
+}
+
+/* ************** END RECOMMENDATION ************** */
+/* ************** START ORDER-PROJECT ************** */
+
+#order-project {
+  background-image: url("../img/order-project-background.jpg");
+  padding: 60px 0 60px 70px;
+}
+#order-project button {
+  background: #eedc86;
+  color: black;
 }
