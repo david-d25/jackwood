@@ -75,11 +75,11 @@
     </div>
   </div>
 
-  <div id="recommendation">
+  <div class="recommendation">
     <div class="section-title">Рекомендация</div>
     <div class="container">
 
-      <img src="img/recommendation/main-img.jpg" alt="Девушка, смотрящая на тебя" class="girl-looking">
+      <img src="img/recommendation/main-img.jpg" alt="Девушка, смотрящая на тебя" class="someone-looking">
       <p class="recommendation-text">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
       </p>
@@ -93,11 +93,11 @@
   <div id="order-project" class="banner">
     <div class="container">
 
-      <h1 class="bigtext">
+      <div class="bigtext">
         хотите такой же<br>
         качественный<br>
         проект мебели?
-      </h1>
+      </div>
 
       <form class="request-call-form">
         <span>
@@ -110,6 +110,75 @@
           <input type="tel" id="tel" name="tel">
         </span>
         <button type="submit" class="request-call-btn">заказать</button>
+      </form>
+
+    </div>
+  </div>
+
+  <div id="portfolio">
+    <div class="section-title">
+      Портфолио наших<br>высококлассных проектов
+    </div>
+    <div class="section-description">
+      Ни одна мебельная компания не сможет вам разработать
+      <br>
+      таких качественных проектов
+    </div>
+    <div class="container">
+
+      <script type="text/x-handlebars-template" id="portfolio-item-template">
+        <div class="portfolio-item icon-zoom" style="background-image: url('img/portfolio/project-{{index}}.jpg')" href="img/portfolio/project-{{index}}.jpg"></div>
+      </script>
+
+    </div>
+    <div class="load-more">Загрузить еще <span class="icon-arrow-down"></span></div>
+  </div>
+
+  <div id="clean-materials" class="banner">
+    <div class="container">
+      <div class="bigtext">
+        Мы работаем только<br>
+        с экологически чистыми<br>
+        сертифицированными<br>
+        материалам
+      </div>
+    </div>
+  </div>
+
+  <div class="recommendation white-bg">
+    <div class="section-title">Рекомендация</div>
+    <div class="container">
+
+      <img src="img/recommendation-2/main-img.jpg" alt="Парень, смотрящий на тебя" class="someone-looking">
+      <p class="recommendation-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+      </p>
+      <img src="img/recommendation-2/recommendation-1.jpg" class="recommendation-img">
+      <img src="img/recommendation-2/recommendation-2.jpg" class="recommendation-img">
+      <img src="img/recommendation-2/recommendation-3.jpg" class="recommendation-img">
+
+    </div>
+  </div>
+
+  <div id="we-will-tell" class="banner">
+    <div class="container">
+
+      <h1 class="bigtext">
+        расскжаем<br>
+        всё как есть
+      </h1>
+
+      <form class="request-call-form">
+        <span>
+          <label for="fname">Ваше имя</label>
+          <input type="text" id="fname" name="first-name">
+        </span>
+
+        <span>
+          <label for="tel">Номер телефона</label>
+          <input type="tel" id="tel" name="tel">
+        </span>
+        <button type="submit" class="request-call-btn">получить консультацию</button>
       </form>
 
     </div>

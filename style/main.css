@@ -81,6 +81,56 @@ body {
 }
 
 /* ************** END COMMON ************** */
+/* ************** START MFP-FIX ************** */
+
+.mfp-zoom-out-cur {
+  cursor: default;
+}
+.mfp-arrow-left:before,
+.mfp-arrow-right:before {
+  display: none;
+}
+.mfp-arrow-left:after,
+.mfp-arrow-right:after {
+  border: none;
+  font-family: 'icons';
+  content: '\0042';
+  color: white;
+  top: -15px;
+  margin-left: 100%;
+  font-size: 64px;
+  transform: rotate(90deg);
+}
+.mfp-arrow-right:after {
+  margin-left: 0;
+  top: 50px;
+  transform: rotate(-90deg);
+}
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+  cursor: pointer;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 75px;
+  right: 20px;
+}
+.mfp-close:before,
+.mfp-close:after {
+  position: absolute;
+  display: block;
+  content: "";
+  background: black;
+  transform: rotate(-45deg);
+  width: 75px;
+  height: 6px;
+  top: 25px;
+  right: 0;
+}
+.mfp-close:after {
+  transform: rotate(45deg);
+}
+
+/* ************** END MFP-FIX ************** */
 /* ************** START HEADER ************** */
 
 header {
@@ -172,11 +222,14 @@ header .vcard *:before {
 /* ************** END SOLUTIONS ************** */
 /* ************** START RECOMMENDATION ************** */
 
-#recommendation {
+.recommendation {
   background: #efefef;
 }
+.recommendation.white-bg {
+  background: white;
+}
 
-#recommendation .container {
+.recommendation .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -184,7 +237,7 @@ header .vcard *:before {
   padding: 0 120px 70px 120px;
 }
 
-#recommendation .girl-looking {
+.recommendation .someone-looking {
   margin-bottom: 50px;
 }
 
@@ -199,8 +252,84 @@ header .vcard *:before {
 #order-project {
   background-image: url("../img/order-project-background.jpg");
   padding: 60px 0 60px 70px;
+  margin-bottom: 50px;
+  box-shadow: 0 50px 0 #efefef;
 }
 #order-project button {
   background: #eedc86;
-  color: black;
+  color: #010101;
+}
+
+/* ************** END ORDER-PROJECT ************** */
+/* ************** START PORTFOLIO ************** */
+
+#portfolio {
+  font-size: 28px;
+  text-align: center;
+}
+#portfolio .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+#portfolio .section-description {
+  margin-bottom: 80px;
+}
+#portfolio .section-title {
+  padding-bottom: 28px;
+}
+#portfolio .portfolio-item {
+  width: 350px;
+  height: 350px;
+  cursor: pointer;
+  position: relative;
+}
+#portfolio .portfolio-item:before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s;
+  font-size: 64px;
+  color: white;
+  opacity: 0;
+}
+#portfolio .portfolio-item:hover:before {
+  opacity: 1;
+}
+#portfolio .load-more {
+  line-height: 200px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #201600;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+#portfolio .load-more span:before {
+  vertical-align: middle;
+  transform: scale(.75);
+}
+
+/* ************** END PORTFOLIO ************** */
+/* ************** START MATERIALS ************** */
+
+#clean-materials {
+  background-image: url('../img/clean-materials.jpg');
+  padding: 260px 0 260px 70px;
+}
+
+/* ************** END MATERIALS ************** */
+/* ************** START WE-WILL-TELL ************** */
+
+#we-will-tell {
+  background-image: url('../img/we-will-tell.jpg');
+  padding: 115px 0 100px 70px;
+  margin-top: 50px;
+  box-shadow: 0 -50px 0 #efefef;
+}
+#we-will-tell .request-call-btn {
+  width: 300px;
+  background: #eedc86;
+  color: #010101;
 }
