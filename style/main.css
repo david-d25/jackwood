@@ -176,15 +176,15 @@ header .vcard *:before {
 /* ************** END HEADER ************** */
 /* ************** START MAIN-BANNER ************** */
 
-#main-banner {
+.main-banner {
   background-image: url("../img/header-background.png");
 }
 
-#main-banner .container {
+.main-banner .container {
   padding: 180px 0 180px 70px;
 }
 
-#main-banner h2 {
+.main-banner h2 {
   font-weight: lighter;
   line-height: 24px;
   font-size: 39px;
@@ -194,7 +194,7 @@ header .vcard *:before {
 /* ************** END MAIN-BANNER ************** */
 /* ************** START SOLUTIONS ************** */
 
-#our-solutions .container {
+.our-solutions .container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -249,13 +249,13 @@ header .vcard *:before {
 /* ************** END RECOMMENDATION ************** */
 /* ************** START ORDER-PROJECT ************** */
 
-#order-project {
+.order-project {
   background-image: url("../img/order-project-background.jpg");
   padding: 60px 0 60px 70px;
   margin-bottom: 50px;
   box-shadow: 0 50px 0 #efefef;
 }
-#order-project button {
+.order-project button {
   background: #eedc86;
   color: #010101;
 }
@@ -263,29 +263,29 @@ header .vcard *:before {
 /* ************** END ORDER-PROJECT ************** */
 /* ************** START PORTFOLIO ************** */
 
-#portfolio {
+.portfolio {
   font-size: 28px;
   text-align: center;
 }
-#portfolio .container {
+.portfolio .container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
 }
-#portfolio .section-description {
+.portfolio .section-description {
   margin-bottom: 80px;
 }
-#portfolio .section-title {
+.portfolio .section-title {
   padding-bottom: 28px;
 }
-#portfolio .portfolio-item {
+.portfolio .portfolio-item {
   width: 350px;
   height: 350px;
   cursor: pointer;
   position: relative;
 }
-#portfolio .portfolio-item:before {
+.portfolio .portfolio-item:before {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -295,10 +295,10 @@ header .vcard *:before {
   color: white;
   opacity: 0;
 }
-#portfolio .portfolio-item:hover:before {
+.portfolio .portfolio-item:hover:before {
   opacity: 1;
 }
-#portfolio .load-more {
+.portfolio .load-more {
   line-height: 200px;
   text-transform: uppercase;
   font-weight: bold;
@@ -306,7 +306,7 @@ header .vcard *:before {
   letter-spacing: 1px;
   cursor: pointer;
 }
-#portfolio .load-more span:before {
+.portfolio .load-more span:before {
   vertical-align: middle;
   transform: scale(.75);
 }
@@ -314,7 +314,7 @@ header .vcard *:before {
 /* ************** END PORTFOLIO ************** */
 /* ************** START MATERIALS ************** */
 
-#clean-materials {
+.clean-materials {
   background-image: url('../img/clean-materials.jpg');
   padding: 260px 0 260px 70px;
 }
@@ -322,14 +322,16 @@ header .vcard *:before {
 /* ************** END MATERIALS ************** */
 /* ************** START WE-WILL-TELL ************** */
 
-#we-will-tell {
+.we-will-tell {
   background-image: url('../img/we-will-tell.jpg');
   padding: 115px 0 100px 70px;
   margin-top: 50px;
   box-shadow: 0 -50px 0 #efefef;
 }
-#we-will-tell .request-call-btn {
+.we-will-tell .request-call-btn {
   width: 300px;
   background: #eedc86;
   color: #010101;
 }
+
+/* TODO: fonts */
