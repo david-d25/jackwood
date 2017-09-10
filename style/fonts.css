@@ -1,23 +1,39 @@
 @font-face {
-  font-family: "Muller";
+  font-family: 'Muller';
+  src: url('../font/MullerBlack.eot');
+  src: url('../font/MullerBlack.eot?#iefix') format('embedded-opentype'),
+    url('../font/MullerBlack.woff') format('woff'),
+    url('../font/MullerBlack.ttf') format('truetype'),
+    url('../font/MullerBlack.svg#MullerBlack') format('svg');
   font-weight: 900;
-  src: url("../font/Fontfabric - MullerBlack.otf");
+  font-style: normal;
 }
-
 @font-face {
-  font-family: "Lato";
+  font-family: 'Lato';
+  src: url('../font/Lato-Regular.eot');
+  src: url('../font/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../font/Lato-Regular.woff') format('woff'),
+    url('../font/Lato-Regular.ttf') format('truetype');
   font-weight: normal;
-  src: url("../font/Lato-Regular.ttf");
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Lato";
+  font-family: 'Lato';
+  src: url('../font/Lato-Bold.eot');
+  src: url('../font/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../font/Lato-Bold.woff') format('woff'),
+    url('../font/Lato-Bold.ttf') format('truetype');
   font-weight: bold;
-  src: url("../font/Lato-Bold.ttf");
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Lato";
-  font-weight: lighter;
-  src: url("../font/Lato-Light.ttf");
+  font-family: 'Lato';
+  src: url('../font/Lato-Light.eot');
+  src: url('../font/Lato-Light.eot?#iefix') format('embedded-opentype'),
+    url('../font/Lato-Light.woff') format('woff'),
+    url('../font/Lato-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
 }

@@ -18,32 +18,39 @@
 
 </head>
 <body>
-  <header>
+  <div class="header">
     <div class="container">
-
+      <!-- http://microformats.org/wiki/hcard-ru -->
       <div class="vcard">
-        <span class="fn org">Jackwood</span>
-        <span class="workhours icon-time">с 9:00 до 21:00<br>без выходных</span>
-        <span class="adr icon-geo">
-          <span class="locality">г. Минск</span>
+        <span class="vcard__item fn org">Jackwood</span>
+        <span class="vcard__item workhours">
+          <span class="header__icon icon-time"></span>
+          с 9:00 до 21:00<br>без выходных
+        </span>
+        <span class="vcard__item adr">
+          <span class="header__icon icon-geo"></span>
+          <span class="vcard__item vcard__item--block locality">г. Минск</span>
           <span class="street-address">ул. Пионерская, 9</span>
         </span>
-        <span class="tel icon-smartphone">+375 44 736-20-01</span>
+        <span class="vcard__item tel">
+          <span class="header__icon icon-smartphone"></span>
+          +375 44 736-20-01
+        </span>
         <button class="request-call-btn">Вам позвонить?</button>
       </div>
 
     </div>
-  </header>
+  </div>
 
-  <div class="main-banner banner">
-    <div class="container">
+  <div class="banner banner--main">
+    <div class="container banner--main__container">
 
-      <h1 class="bigtext">
+      <h2 class="banner__bigtext">
         кухни,<br>
         шкафы-купе,<br>
         корпусная мебель
-      </h1>
-      <h2>На заказ по индивидуальным проектам</h2>
+      </h2>
+      <h2 class="banner__description">На заказ по индивидуальным проектам</h2>
 
       <form class="request-call-form">
         <span>
@@ -62,13 +69,13 @@
   </div>
 
   <div id="our-solutions" class="our-solutions">
-    <div class="section-title">Наши решения<br>для вашего дома</div>
-    <div class="container">
+    <h2 class="section-title">Наши решения<br>для вашего дома</h2>
+    <div class="container our-solutions__container">
       
       <script type="text/x-handlebars-template" id="solution-template">
-        <div class="solution">
-          <img class="solution-img" src="img/our-solutions/solution-{{number}}.jpg" alt="{{name}}">
-          <div class="solution-name">{{name}}</div>
+        <div class="our-solutions__solution">
+          <img class="image" src="img/our-solutions/solution-{{number}}.jpg" alt="{{name}}">
+          <div class="name">{{name}}</div>
         </div>
       </script>
 
@@ -76,16 +83,16 @@
   </div>
 
   <div class="recommendation">
-    <div class="section-title">Рекомендация</div>
-    <div class="container">
+    <h2 class="section-title">Рекомендация</h2>
+    <div class="container container--recommendation">
 
-      <img src="img/recommendation/main-img.jpg" alt="Девушка, смотрящая на тебя" class="someone-looking">
-      <p class="recommendation-text">
+      <img src="img/recommendation/main-img.jpg" alt="Девушка, смотрящая на тебя" class="recommendation__someone-looking">
+      <p class="recommendation__text">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
       </p>
-      <img src="img/recommendation/recommendation-1.jpg" class="recommendation-img">
-      <img src="img/recommendation/recommendation-2.jpg" class="recommendation-img">
-      <img src="img/recommendation/recommendation-3.jpg" class="recommendation-img">
+      <img src="img/recommendation/recommendation-1.jpg">
+      <img src="img/recommendation/recommendation-2.jpg">
+      <img src="img/recommendation/recommendation-3.jpg">
 
     </div>
   </div>
@@ -93,11 +100,11 @@
   <div class="order-project banner">
     <div class="container">
 
-      <div class="bigtext">
+      <h2 class="banner__bigtext">
         хотите такой же<br>
         качественный<br>
         проект мебели?
-      </div>
+      </h2>
 
       <form class="request-call-form">
         <span>
@@ -116,27 +123,27 @@
   </div>
 
   <div id="portfolio" class="portfolio">
-    <div class="section-title">
+    <h2 class="section-title section-title--portfolio">
       Портфолио наших<br>высококлассных проектов
-    </div>
-    <div class="section-description">
+    </h2>
+    <div class="portfolio__description">
       Ни одна мебельная компания не сможет вам разработать
       <br>
       таких качественных проектов
     </div>
-    <div class="container">
+    <div class="container container--portfolio">
 
       <script type="text/x-handlebars-template" id="portfolio-item-template">
-        <div class="portfolio-item icon-zoom" style="background-image: url('img/portfolio/project-{{index}}.jpg')" href="img/portfolio/project-{{index}}.jpg"></div>
+        <div class="portfolio__item icon-zoom" style="background-image: url('img/portfolio/project-{{index}}.jpg')" href="img/portfolio/project-{{index}}.jpg"></div>
       </script>
 
     </div>
-    <div class="load-more">Загрузить еще <span class="icon-arrow-down"></span></div>
+    <div class="portfolio__load-more">Загрузить еще <span class="icon-arrow-down"></span></div>
   </div>
 
   <div class="clean-materials banner">
     <div class="container">
-      <div class="bigtext">
+      <div class="banner__bigtext">
         Мы работаем только<br>
         с экологически чистыми<br>
         сертифицированными<br>
@@ -145,17 +152,17 @@
     </div>
   </div>
 
-  <div class="recommendation white-bg">
-    <div class="section-title">Рекомендация</div>
-    <div class="container">
+  <div class="recommendation recommendation--white-bg">
+    <h2 class="section-title">Рекомендация</h2>
+    <div class="container container--recommendation">
 
-      <img src="img/recommendation-2/main-img.jpg" alt="Парень, смотрящий на тебя" class="someone-looking">
-      <p class="recommendation-text">
+      <img src="img/recommendation-2/main-img.jpg" alt="Парень, смотрящий на тебя" class="recommendation__someone-looking">
+      <p class="recommendation__text">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
       </p>
-      <img src="img/recommendation-2/recommendation-1.jpg" class="recommendation-img">
-      <img src="img/recommendation-2/recommendation-2.jpg" class="recommendation-img">
-      <img src="img/recommendation-2/recommendation-3.jpg" class="recommendation-img">
+      <img src="img/recommendation-2/recommendation-1.jpg">
+      <img src="img/recommendation-2/recommendation-2.jpg">
+      <img src="img/recommendation-2/recommendation-3.jpg">
 
     </div>
   </div>
@@ -163,10 +170,10 @@
   <div class="we-will-tell banner">
     <div class="container">
 
-      <h1 class="bigtext">
+      <h2 class="banner__bigtext">
         расскжаем<br>
         всё как есть
-      </h1>
+      </h2>
 
       <form class="request-call-form">
         <span>
@@ -181,6 +188,95 @@
         <button type="submit" class="request-call-btn">получить консультацию</button>
       </form>
 
+    </div>
+  </div>
+
+  <div class="we-are-better-wr">
+    <div class="container">
+      <div class="we-are-better">
+
+        <h2 class="section-title section-title--we-are-better">
+          Почему наша мебель лучше
+        </h2>
+
+        <div class="we-are-better__row">
+          <div class="we-are-better__data">
+            <span class="we-are-better__title">
+              Сразу итоговая цена
+            </span>
+            В отличие от многих производителей, которые называют заниженные цены, чтобы подписать с вами договор, а в последующем в разы увеличивают цены, мы сразу оговариваем финальную цену и ее не меняем в процессе реализации.
+          </div>
+          <div class="we-are-better__data">
+            <span class="we-are-better__title">
+              Идеальные проекты
+            </span>
+            Большинство производителей нанимают в качестве дизайнеров для вашей мебели студентов или людей прошедших "курсы моделирования мебели.<br><br> Все наши проекты разрабатываются профессионалами самой востребованной студии дизайна в стране. Studio57
+          </div>
+          <div class="we-are-better__data">
+            <span class="we-are-better__title">
+              Сразу итоговая цена
+            </span>
+            Часто производители используют различные уловки, в которых вы не разбираетесь для экономии: более дешевые аналоги материлов, например, чтобы уменьшить стоимость мебели. В итоге вы получаете совсем не то, что хотели.<br><br>Мы изготавливаем мебель из тех материалов, которые были изначально спроектированы, чтобы результат полностью соответствовал картинке. 
+          </div>
+        </div>
+
+        <div class="we-are-better__row">
+          <div class="we-are-better__data">
+            <span class="we-are-better__title">
+              Дизайнеры
+            </span>
+            Конечный результат во многом зависит специалиста , который проектирует мебель.<br><br>Практически все производители работают с одним дизайнером, в результате чего все проекты получаются практически одинаковые. У нас работает более 30 дизайнеров. Поэтому вы можете быть уверены, что ваш проектбудет уникальным. 
+          </div>
+          <div class="we-are-better__data">
+            <span class="we-are-better__title">
+              Собственное производство
+            </span>
+            У нас собственное производство, что позволяет давать нашим клиентам давать очень приятные цены и отвечать за конечный результат. 
+          </div>
+          <div class="we-are-better__data">
+            <span class="we-are-better__title">
+              Сроки
+            </span>
+            Без исключения все производители называют сроки производства, которые не могут выполнить.<br><br>Мы понимаем наших клиентов, которые планируют свое время и хотят сразу знать сколько времени займет производство. Мы сзываем реальные сроки и их соблюдаем. 
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="zero-rubles-wr banner">
+    <div class="container">
+      <div class="zero-rubles">
+        <div class="zero-rubles__features">
+
+          <div class="zero-rubles__feature">
+            <div class="zero-rubles__icon icon-3d"></div>
+            <div class="zero-rubles__feature-text">3d проект</div>
+          </div>
+
+          <div class="zero-rubles__feature">
+            <div class="zero-rubles__icon--plus"></div>
+          </div>
+
+          <div class="zero-rubles__feature">
+            <div class="zero-rubles__icon icon-delivery"></div>
+            <div class="zero-rubles__feature-text">доставка</div>
+          </div>
+
+          <div class="zero-rubles__feature">
+            <div class="zero-rubles__icon--plus"></div>
+          </div>
+
+          <div class="zero-rubles__feature">
+            <div class="zero-rubles__icon icon-nightstand"></div>
+            <div class="zero-rubles__feature-text">сборка</div>
+          </div>
+
+        </div>
+
+        <div class="zero-rubles__cost">= 0 рублей</div>
+      </div>
     </div>
   </div>
 </body>
