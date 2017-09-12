@@ -32,6 +32,15 @@ body {
   color: white;
 }
 
+.request-call-btn--yellow {
+  background: #eedc86;
+  color: #010101;
+}
+
+.request-call-btn--big {
+  width: 300px;
+}
+
 .section-title {
   font-weight: bold;
   font-size: 48px;
@@ -255,10 +264,6 @@ body {
   margin-bottom: 50px;
   box-shadow: 0 50px 0 #efefef;
 }
-.order-project button {
-  background: #eedc86;
-  color: #010101;
-}
 
 /* ************** END ORDER-PROJECT ************** */
 /* ************** START PORTFOLIO ************** */
@@ -329,11 +334,6 @@ body {
   padding: 115px 0 100px 70px;
   margin-top: 50px;
   box-shadow: 0 -50px 0 #efefef;
-}
-.we-will-tell .request-call-btn {
-  width: 300px;
-  background: #eedc86;
-  color: #010101;
 }
 
 /* ************** END WE-WILL-TELL ************** */
@@ -489,3 +489,49 @@ body {
   font-size: 60px;
   margin-bottom: 50px;
 }
+
+/* ************** END HOW-IT-WORKS ************** */
+/* ************** START HAVE-QUESTIONS ************** */
+
+.have-questions-wr {
+  background-image: url("../img/have-questions.jpg");
+  box-shadow: 0 -50px 0 white;
+}
+.have-questions {
+  padding: 120px 0 100px 70px;
+}
+
+/* ************** END HAVE-QUESTIONS ************** */
+/* ************** START FOOTER ************** */
+
+.footer-wr {
+  padding-top: 45px;
+  background: white;
+  height: 170px;
+}
+.footer {
+  display: flex;
+}
+.footer__middle {
+  width: 600px;
+}
+.footer__website {
+  color: #d4d4d4;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-right: 18px;
+  font-family: "Muller";
+}
+.footer__copyright {
+  color: #bfbebe;
+  max-width: 500px;
+}
+.footer__instagram:before {
+  vertical-align: middle;
+  margin-right: 18px;
+}
+.footer__instagram {
+  color: #2e2e2e;
+}
+
+/* ************** END FOOTER ************** */
