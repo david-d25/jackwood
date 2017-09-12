@@ -38,6 +38,8 @@ body {
   color: #201600;
   text-align: center;
   padding: 80px 0;
+  display: block;
+  margin: 0;
 }
 
 .banner {
@@ -426,3 +428,64 @@ body {
 }
 
 /* ************** END ZERO-RUBLES ************** */
+/* ************** START NOT-IMPERSONAL ************** */
+
+.not-impersonal {
+  padding-bottom: 80px;
+}
+.not-impersonal__managers {
+  display: flex;
+  justify-content: center;
+  color: #201600;
+  align-items: flex-end;
+}
+.not-impersonal__manager-name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 95px;
+}
+.not-impersonal__manager-type {
+  text-align: center;
+  font-size: 18px;
+  color: #afafaf;
+  text-transform: uppercase;
+}
+.not-impersonal__manager {
+  margin-right: 140px;
+}
+.not-impersonal__manager:last-child {
+  margin-right: 0;
+}
+
+/* ************** END NOT-IMPERSONAL ************** */
+/* ************** START HOW-IT-WORKS ************** */
+
+.how-it-works-wr {
+  background: #efefef;
+}
+.how-it-works {
+  padding: 0 50px 90px 70px;
+}
+.how-it-works__steps {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  padding: 70px;
+  padding-bottom: 0;
+}
+.how-it-works__step {
+  width: 25%;
+  height: 50%;
+  font-size: 22px;
+  color: #201600;
+  text-align: center;
+  font-weight: bold;
+  padding: 0 25px 80px 25px;
+}
+.how-it-works__step:before {
+  display: block;
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 50px;
+}
