@@ -237,22 +237,21 @@ body {
 .recommendation--white-bg {
   background: white;
 }
-
 .container--recommendation {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: space-between;
   padding: 0 120px 70px 120px;
 }
-
 .recommendation__someone-looking {
   margin-bottom: 50px;
 }
-
 .recommendation__text {
   font-size: 18px;
   max-width: 510px;
+  margin-bottom: 50px;
 }
 
 /* ************** END RECOMMENDATION ************** */
@@ -456,6 +455,10 @@ body {
 }
 .not-impersonal__manager:last-child {
   margin-right: 0;
+}
+.not-impersonal__image {
+  display: block;
+  margin: auto;
 }
 
 /* ************** END NOT-IMPERSONAL ************** */
