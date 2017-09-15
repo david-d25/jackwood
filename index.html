@@ -135,11 +135,11 @@
     <div class="container container--portfolio">
 
       <script type="text/x-handlebars-template" id="portfolio-item-template">
-        <div class="portfolio__item icon-zoom" style="background-image: url('img/portfolio/project-{{index}}.jpg')" href="img/portfolio/project-{{index}}.jpg"></div>
+        <div class="portfolio__item icon-zoom" style="background-image: url('img/portfolio/{{index}}.jpg')" href="img/portfolio/{{index}}.jpg"></div>
       </script>
 
     </div>
-    <div class="portfolio__load-more">Загрузить еще <span class="icon-arrow-down"></span></div>
+    <div class="portfolio__load-more" id="load-more-button">Загрузить еще <span class="icon-arrow-down"></span></div>
   </div>
 
   <div class="banner clean-materials">

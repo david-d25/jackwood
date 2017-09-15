@@ -15,9 +15,35 @@ var solutionNames = [
   "Офисная мебель"
 ];
 
+var portfolio = {
+  loaded: 0,
+  maxLoad: 73,
+  load: function(count) {
+    var source = $("#portfolio-item-template").html();
+    var template = Handlebars.compile(source);
+    var itemsLeft = count;
+
+    while (this.loaded <= this.maxLoad && itemsLeft-- > 0) {
+      $("#portfolio .container")
+        .append(
+          template({
+            index: ++this.loaded
+          })
+        );
+    }
+    return this.loaded > this.maxLoad;
+  }
+};
+
 function onWindowLoad() {
   generateSolutions();
+  portfolio.load(8);
   initPopups();
+
+  $('#load-more-button').on('click', () => {
+    if (portfolio.load(8))
+      $('#load-more-button').remove();
+  });
 }
 
 function generateSolutions() {
@@ -35,17 +61,6 @@ function generateSolutions() {
 }
 
 function initPopups() {
-  var source = $("#portfolio-item-template").html();
-  var template = Handlebars.compile(source);
-
-  for (var i = 1; i <= 8; i++)
-    $("#portfolio .container")
-      .append(
-        template({
-          index: i
-        })
-      );
-
   $('#portfolio .container').magnificPopup({
     delegate: 'div',
     type: 'image',
