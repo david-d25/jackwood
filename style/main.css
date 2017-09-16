@@ -70,32 +70,38 @@ body {
   font-size: 39px;
   margin: 0;
 }
-.banner input {
-  font-size: 38px;
-  width: 302px;
-  outline: none;
-}
-.banner button {
+
+.request-call button {
   display: block;
   margin: auto;
   margin-top: 30px;
 }
-
-.request-call-form {
+.request-call {
   margin-top: 45px;
-  display: inline-block;
-  letter-spacing: 20px;
-
+  display: flex;
+  justify-content: space-between;
+  max-width: 630px;
+  flex-wrap: wrap;
   font-size: 28px;
   font-weight: normal;
 }
-.request-call-form span {
-  display: inline-block;
+.request-call__input {
+  font-size: 24px;
+  padding: 12px;
+  width: 300px;
+  outline: none;
+  border: none;
+  transition: .3s;
 }
-.request-call-form span label {
+.request-call__input--border {
+  border: solid 3px rgb(212, 212, 212);
+}
+.request-call__input--border-red {
+  border: solid 3px #ff6044;
+}
+.request-call__label {
   display: block;
   margin-bottom: 12px;
-  letter-spacing: normal;
 }
 
 /* ************** MFP-FIX ************** */
@@ -525,4 +531,54 @@ body {
 }
 .footer__instagram {
   color: #2e2e2e;
+}
+
+/* ************** USER-DIALOG ************** */
+
+.user-dialog-wr {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.user-dialog {
+  color: #201600;
+  width: 720px;
+  background: white;
+  padding: 50px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 17px 0px rgba(58, 58, 58, 0.21);
+}
+.user-dialog__bg {
+  background: rgba(0, 0, 0, .5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.user-dialog__title {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-family: "Muller";
+  max-width: 75%;
+  margin-bottom: 35px;
+}
+.user-dialog__message {
+  font-size: 28px;
+}
+.user-dialog__close-btn {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-size: 36px;
+  cursor: pointer;
+}
+.user-dialog__submit-btn {
+  display: block;
+  margin: 40px auto auto auto;
 }

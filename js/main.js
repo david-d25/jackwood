@@ -31,9 +31,49 @@ var portfolio = {
           })
         );
     }
-    return this.loaded > this.maxLoad;
+    return this.loaded <= this.maxLoad; // Осталось еще картинок?
   }
 };
+
+var callRequestDialog = {
+  opened: false,
+  open: function() {
+    if (this.opened) return;
+    this.opened = true;
+
+    var source = $("#call-dialog-template").html();
+    var template = Handlebars.compile(source);
+    $('body').append(template());
+
+    $('.user-dialog__bg, .user-dialog__close-btn').click(() => {
+      this.close();
+    });
+
+    $('#submit-btn').click(() => {
+      var prevent = false;
+      $('.user-dialog input').removeClass('request-call__input--border-red');
+
+      $('.user-dialog input').each((index) => {
+        var current = $($('.user-dialog input')[index]);
+        
+        current.removeClass('request-call__input--border-red');
+        if (!current.val()) {
+          prevent = true;
+          current.addClass('request-call__input--border-red');
+        }
+      });
+      if (prevent) return;
+
+      this.close();
+      showMessageDialog('Спасибо!', 'Скоро мы вам перезвоним!');
+    });
+  },
+  close: function() {
+    if (!this.opened) return;
+    this.opened = false;
+    closeMessageDialog();
+  }
+}
 
 function onWindowLoad() {
   generateSolutions();
@@ -41,8 +81,12 @@ function onWindowLoad() {
   initPopups();
 
   $('#load-more-button').on('click', () => {
-    if (portfolio.load(8))
+    if (!portfolio.load(8))
       $('#load-more-button').remove();
+  });
+
+  $('.request-call-btn').on('click', () => {
+    callRequestDialog.open();
   });
 }
 
@@ -74,4 +118,22 @@ function initPopups() {
     },
     closeMarkup: '<div title="%title%" type="button" class="mfp-close"></button>'
   });
+}
+
+function showMessageDialog(title, message) {
+  closeMessageDialog();
+  var source = $("#message-dialog-template").html();
+  var template = Handlebars.compile(source);
+  $('body').append(template({title, message}));
+
+  $('.user-dialog__bg, .user-dialog__close-btn, #submit-btn').on('click', () => {
+    closeMessageDialog();
+  });
+}
+
+function closeMessageDialog() {
+  if ($('.user-dialog-wr').length) {
+    $('.user-dialog__bg, .user-dialog__close-btn').off('click');
+    $('.user-dialog-wr').remove();
+  }
 }
