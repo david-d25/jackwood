@@ -1,3 +1,5 @@
+const PORTFOLIO_IMAGES_COUNT = 74;
+
 window.onload = onWindowLoad; // Если кто-то подключит скрипт без 'defer'
 
 var solutionNames = [
@@ -16,22 +18,29 @@ var solutionNames = [
 ];
 
 var portfolio = {
-  loaded: 0,
-  maxLoad: 73,
-  load: function(count) {
+  shown: 0,
+  maxLoad: 0,
+  load: function(imagesCount) {
+    this.maxLoad = imagesCount;
     var source = $("#portfolio-item-template").html();
     var template = Handlebars.compile(source);
-    var itemsLeft = count;
 
-    while (this.loaded <= this.maxLoad && itemsLeft-- > 0) {
+    for (var index = 1; index <= this.maxLoad; index++)
       $("#portfolio .container")
         .append(
           template({
-            index: ++this.loaded
+            index: index
           })
         );
-    }
-    return this.loaded <= this.maxLoad; // Осталось еще картинок?
+  },
+  show: function(count) {
+    var itemsLeft = count;
+
+    while (this.shown++ <= this.maxLoad && itemsLeft-- > 0)
+      $($('.portfolio__item--hidden')[0])
+        .removeClass('portfolio__item--hidden');
+
+    return this.shown <= this.maxLoad; // Осталось еще картинок?
   }
 };
 
@@ -77,11 +86,12 @@ var callRequestDialog = {
 
 function onWindowLoad() {
   generateSolutions();
-  portfolio.load(8);
+  portfolio.load(PORTFOLIO_IMAGES_COUNT);
+  portfolio.show(8);
   initPopups();
 
   $('#load-more-button').on('click', () => {
-    if (!portfolio.load(8))
+    if (!portfolio.show(8))
       $('#load-more-button').remove();
   });
 

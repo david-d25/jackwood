@@ -308,6 +308,9 @@ body {
 .portfolio__item:hover:before {
   opacity: 1;
 }
+.portfolio__item--hidden {
+  display: none;
+}
 .portfolio__load-more {
   text-transform: uppercase;
   font-weight: bold;
