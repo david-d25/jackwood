@@ -3,7 +3,7 @@
 <head>
   <title>Jackwood</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=1480, initial-scale=0.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="style/lib/magnific-popup.css">
 
@@ -75,8 +75,8 @@
       
       <script type="text/x-handlebars-template" id="solution-template">
         <div class="our-solutions__solution">
-          <img class="image" src="img/our-solutions/solution-{{number}}.jpg" alt="{{name}}">
-          <div class="name">{{name}}</div>
+          <img class="our-solutions__solution-image" src="img/our-solutions/solution-{{number}}.jpg" alt="{{name}}">
+          <div class="our-solutions__solution-name">{{name}}</div>
         </div>
       </script>
 
@@ -91,10 +91,11 @@
       <div class="recommendation__text">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
       </div>
-      <img src="img/recommendation/recommendation-1.jpg">
-      <img src="img/recommendation/recommendation-2.jpg">
-      <img src="img/recommendation/recommendation-3.jpg">
-
+      <div class="recommendation__images">
+        <img class="recommendation__image" src="img/recommendation/recommendation-1.jpg">
+        <img class="recommendation__image" src="img/recommendation/recommendation-2.jpg">
+        <img class="recommendation__image" src="img/recommendation/recommendation-3.jpg">
+      </div>
     </div>
   </div>
 
@@ -165,10 +166,11 @@
       <div class="recommendation__text">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
       </div>
-      <img src="img/recommendation-2/recommendation-1.jpg">
-      <img src="img/recommendation-2/recommendation-2.jpg">
-      <img src="img/recommendation-2/recommendation-3.jpg">
-
+      <div class="recommendation__images">
+        <img class="recommendation__image" src="img/recommendation-2/recommendation-1.jpg">
+        <img class="recommendation__image" src="img/recommendation-2/recommendation-3.jpg">
+        <img class="recommendation__image" src="img/recommendation-2/recommendation-2.jpg">
+      </div>
     </div>
   </div>
 
@@ -209,19 +211,25 @@
             <span class="we-are-better__title">
               Сразу итоговая цена
             </span>
-            В отличие от многих производителей, которые называют заниженные цены, чтобы подписать с вами договор, а в последующем в разы увеличивают цены, мы сразу оговариваем финальную цену и ее не меняем в процессе реализации.
+            <span class="we-are-better__description">
+              В отличие от многих производителей, которые называют заниженные цены, чтобы подписать с вами договор, а в последующем в разы увеличивают цены, мы сразу оговариваем финальную цену и ее не меняем в процессе реализации.
+            </span>
           </div>
           <div class="we-are-better__data">
             <span class="we-are-better__title">
               Идеальные проекты
             </span>
-            Большинство производителей нанимают в качестве дизайнеров для вашей мебели студентов или людей прошедших "курсы моделирования мебели.<br><br> Все наши проекты разрабатываются профессионалами самой востребованной студии дизайна в стране. Studio57
+            <span class="we-are-better__description">
+              Большинство производителей нанимают в качестве дизайнеров для вашей мебели студентов или людей прошедших "курсы моделирования мебели.<br><br> Все наши проекты разрабатываются профессионалами самой востребованной студии дизайна в стране. Studio57
+            </span>
           </div>
           <div class="we-are-better__data">
             <span class="we-are-better__title">
               Сразу итоговая цена
             </span>
-            Часто производители используют различные уловки, в которых вы не разбираетесь для экономии: более дешевые аналоги материлов, например, чтобы уменьшить стоимость мебели. В итоге вы получаете совсем не то, что хотели.<br><br>Мы изготавливаем мебель из тех материалов, которые были изначально спроектированы, чтобы результат полностью соответствовал картинке. 
+            <span class="we-are-better__description">
+              Часто производители используют различные уловки, в которых вы не разбираетесь для экономии: более дешевые аналоги материлов, например, чтобы уменьшить стоимость мебели. В итоге вы получаете совсем не то, что хотели.<br><br>Мы изготавливаем мебель из тех материалов, которые были изначально спроектированы, чтобы результат полностью соответствовал картинке. 
+            </span>
           </div>
         </div>
 
@@ -230,19 +238,25 @@
             <span class="we-are-better__title">
               Дизайнеры
             </span>
-            Конечный результат во многом зависит специалиста , который проектирует мебель.<br><br>Практически все производители работают с одним дизайнером, в результате чего все проекты получаются практически одинаковые. У нас работает более 30 дизайнеров. Поэтому вы можете быть уверены, что ваш проектбудет уникальным. 
+            <span class="we-are-better__description">
+              Конечный результат во многом зависит специалиста , который проектирует мебель.<br><br>Практически все производители работают с одним дизайнером, в результате чего все проекты получаются практически одинаковые. У нас работает более 30 дизайнеров. Поэтому вы можете быть уверены, что ваш проектбудет уникальным.
+            </span>
           </div>
           <div class="we-are-better__data">
             <span class="we-are-better__title">
               Собственное производство
             </span>
-            У нас собственное производство, что позволяет давать нашим клиентам давать очень приятные цены и отвечать за конечный результат. 
+            <span class="we-are-better__description">
+              У нас собственное производство, что позволяет давать нашим клиентам давать очень приятные цены и отвечать за конечный результат. 
+            </span>
           </div>
           <div class="we-are-better__data">
             <span class="we-are-better__title">
               Сроки
             </span>
-            Без исключения все производители называют сроки производства, которые не могут выполнить.<br><br>Мы понимаем наших клиентов, которые планируют свое время и хотят сразу знать сколько времени займет производство. Мы сзываем реальные сроки и их соблюдаем. 
+            <span class="we-are-better__description">
+              Без исключения все производители называют сроки производства, которые не могут выполнить.<br><br>Мы понимаем наших клиентов, которые планируют свое время и хотят сразу знать сколько времени займет производство. Мы сзываем реальные сроки и их соблюдаем. 
+            </span>
           </div>
         </div>
 
@@ -361,7 +375,7 @@
 
   <div class="banner have-questions-wr">
     <div class="container">
-      <div class="have-questions">
+      <div class="banner have-questions">
         
         <h2 class="banner__bigtext">
           остались

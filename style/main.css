@@ -55,6 +55,7 @@ body {
   background-size: cover;
   background-position: center;
   color: white;
+  overflow: hidden;
 }
 .banner__bigtext {
   font-family: "Muller";
@@ -218,10 +219,11 @@ body {
   margin-bottom: 15px;
 }
 
-.our-solutions__solution .image {
+.our-solutions__solution-image {
   display: block;
+  width: 100%;
 }
-.our-solutions__solution .name {
+.our-solutions__solution-name {
   margin: 0 auto;
   display: block;
   text-align: center;
@@ -249,6 +251,12 @@ body {
 }
 .recommendation__someone-looking {
   margin-bottom: 50px;
+}
+.recommendation__images {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .recommendation__text {
   font-size: 18px;
@@ -461,6 +469,7 @@ body {
 .not-impersonal__image {
   display: block;
   margin: auto;
+  width: 100%;
 }
 
 /* ************** HOW-IT-WORKS ************** */
@@ -530,10 +539,11 @@ body {
 }
 .footer__instagram:before {
   vertical-align: middle;
-  margin-right: 18px;
+  margin-right: 5px;
 }
 .footer__instagram {
   color: #2e2e2e;
+  min-width: 105px;
 }
 
 /* ************** USER-DIALOG ************** */
@@ -584,4 +594,345 @@ body {
 .user-dialog__submit-btn {
   display: block;
   margin: 40px auto auto auto;
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 1024px;
+  }
+
+  .vcard {
+    margin: 0;
+  }
+
+  .request-call-btn {
+    margin-right: 0;
+  }
+
+  .our-solutions__container {
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: space-around;
+  }
+
+  .container--recommendation {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .portfolio__item {
+    width: 256px;
+    height: 256px;
+  }
+
+  .recommendation__text {
+    max-width: 40%;
+  }
+  .recommendation__image {
+    width: 33%;
+  }
+
+  .clean-materials {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  .we-are-better {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .how-it-works {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 768px;
+  }
+
+  .vcard__item.workhours,
+  .vcard__item.adr {
+    display: none;
+  }
+
+  .banner__description {
+    line-height: 36px;
+  }
+  .banner--main__container {
+    padding: 90px 0;
+  }
+  .banner__bigtext {
+    font-size: 42px;
+    line-height: 52px;
+  }
+
+  .recommendation__someone-looking {
+    width: 300px;
+    float: left;
+    margin: 0 30px 30px 0;
+  }
+  .recommendation__text {
+    max-width: none;
+    margin-bottom: 25px;
+  }
+
+  .container--recommendation {
+    display: block;
+  }
+
+  .portfolio__item {
+    width: 192px;
+    height: 192px;
+  }
+  .portfolio__load-more {
+    margin: 40px 0;
+  }
+
+  .clean-materials {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .zero-rubles {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+  .zero-rubles__feature {
+    width: 100px;
+  }
+
+  .not-impersonal__manager-name {
+    line-height: initial;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .how-it-works__steps {
+    padding: 50px 0 0 0;
+  }
+  .how-it-works__step {
+    font-size: 18px;
+  }
+  .how-it-works__step::before {
+    font-size: 42px;
+    margin-bottom: 30px;
+  }
+
+  .have-questions {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+  .request-call {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 425px;
+  }
+
+  .header .request-call-btn {
+    display: none;
+  }
+
+  .banner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .banner--main__container {
+    padding: 50px 0;
+  }
+  .banner__bigtext {
+    font-size: 32px;
+    line-height: initial;
+    text-align: center;
+  }
+  .banner__description {
+    font-size: 22px;
+    line-height: initial;
+    text-align: center;
+  }
+
+  .request-call {
+    justify-content: space-around;
+  }
+  .request-call__label {
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 36px;
+    padding: 40px 0;
+  }
+
+  .our-solutions__solution {
+    width: 48%;
+  }
+  .our-solutions__solution-name {
+    font-size: 20px;
+  }
+
+  .recommendation__someone-looking {
+    width: 200px;
+  }
+  .recommendation__text {
+    font-size: 16px;
+  }
+
+  .portfolio__description {
+    margin-bottom: 40px;
+  }
+
+  .we-will-tell {
+    padding: 50px 0;
+  }
+
+  .we-are-better {
+    padding-bottom: 70px;
+  }
+  .we-are-better__row {
+    padding: 20px 0;
+  }
+  .we-are-better__title {
+    font-size: 18px;
+  }
+  .we-are-better__description {
+    display: none;
+  }
+
+  .zero-rubles__features {
+    flex-direction: column;
+  }
+  .zero-rubles__feature:nth-child(odd) {
+    width: 125px;
+    height: 125px;
+  }
+  .zero-rubles__icon--plus {
+    margin-top: 50px;
+  }
+  .zero-rubles__icon:before {
+    line-height: 125px;
+    font-size: 74px;
+  }
+  .zero-rubles__cost {
+    margin-top: 100px;
+  }
+
+  .not-impersonal__manager {
+    width: 40%;
+    margin-right: 40px;
+  }
+  .not-impersonal__image {
+    height: 350px;
+    width: auto;
+  }
+
+  .how-it-works__steps {
+    padding: 25px 0 0 0;
+    justify-content: center;
+  }
+  .how-it-works__step {
+    width: calc(100%/3);
+    padding-bottom: 40px;
+    font-size: 12px;
+  }
+  .how-it-works__step:before {
+    margin-bottom: 15px;
+  }
+
+  .footer__copyright {
+    font-size: 12px;
+  }
+
+  .user-dialog {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  .user-dialog__title {
+    padding: 50px 0 0 50px;
+  }
+  .user-dialog__message {
+    padding: 0 50px;
+  }
+  .request-call-btn {
+    margin: 25px auto;
+  }
+
+  .request-call {
+    width: 425px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    width: 320px;
+  }
+
+  .vcard {
+    justify-content: space-around;
+  }
+  .vcard__item.tel {
+    display: none;
+  }
+
+  .request-call {
+    width: 320px;
+  }
+
+  .portfolio__item {
+    width: 160px;
+    height: 160px;
+  }
+  .portfolio__description {
+    font-size: 18px;
+  }
+
+  .banner__bigtext {
+    font-size: 24px;
+  }
+
+  .we-are-better__data {
+    width: calc(100%/3 - (1 - 1/3)*10px);
+  }
+
+  .zero-rubles__cost {
+    font-size: 50px;
+  }
+
+  .not-impersonal {
+    padding-bottom: 40px;
+  }
+  .not-impersonal__manager {
+    margin-right: 20px;
+  }
+  .not-impersonal__image {
+    height: 300px;
+  }
+  .not-impersonal__manager-name {
+    font-size: 18px;
+  }
+  .not-impersonal__manager-type {
+    font-size: 12px;
+  }
+
+  .how-it-works__step {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+  }
+  .footer__left,
+  .footer__middle,
+  .footer__right {
+    margin: 10px;
+  }
 }
