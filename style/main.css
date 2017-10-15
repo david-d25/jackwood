@@ -12,6 +12,7 @@ body {
 .container {
   width: 1400px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .request-call-btn {
@@ -56,6 +57,7 @@ body {
   background-position: center;
   color: white;
   overflow: hidden;
+  padding: 25px 0;
 }
 .banner__bigtext {
   font-family: "Muller";
@@ -164,8 +166,10 @@ body {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 2px;
   left: -25px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 /* ************** VCARD ************** */
@@ -193,6 +197,8 @@ body {
 }
 .vcard__item {
   position: relative;
+  color: black;
+  text-decoration: none;
 }
 
 /* ************** MAIN-BANNER ************** */
@@ -217,6 +223,7 @@ body {
 
 .our-solutions__solution {
   margin-bottom: 15px;
+  width: 30%;
 }
 
 .our-solutions__solution-image {
@@ -359,21 +366,25 @@ body {
 .section-title--we-are-better {
   margin: 0;
 }
-.we-are-better__row {
+.we-are-better__content {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  border-bottom: solid 5px #dcdcdc;
   padding: 40px 0;
 }
-.we-are-better__row:last-child {
-  border: none;
-}
-.we-are-better__data {
+.we-are-better__item {
   font-size: 18px;
   text-align: center;
   display: inline-block;
-  width: calc(100%/3 - (1 - 1/3)*30px);
+  width: calc(100%/3);
+  padding: 15px 0;
+  border-bottom: solid 5px #dcdcdc;
+}
+.we-are-better__item:nth-child(4),
+.we-are-better__item:nth-child(5),
+.we-are-better__item:nth-child(6) {
+  border: none;
 }
 .we-are-better__title {
   display: block;
@@ -621,8 +632,8 @@ body {
   }
 
   .portfolio__item {
-    width: 256px;
-    height: 256px;
+    width: 251px;
+    height: 251px;
   }
 
   .recommendation__text {
@@ -648,7 +659,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1050px) {
   .container {
     width: 768px;
   }
@@ -669,6 +680,10 @@ body {
     line-height: 52px;
   }
 
+  .our-solutions__solution {
+    width: 32%;
+  }
+
   .recommendation__someone-looking {
     width: 300px;
     float: left;
@@ -684,8 +699,8 @@ body {
   }
 
   .portfolio__item {
-    width: 192px;
-    height: 192px;
+    width: 187px;
+    height: 187px;
   }
   .portfolio__load-more {
     margin: 40px 0;
@@ -730,7 +745,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .container {
     width: 425px;
   }
@@ -771,10 +786,10 @@ body {
   }
 
   .our-solutions__solution {
-    width: 48%;
+    width: calc(100%/3);
   }
   .our-solutions__solution-name {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .recommendation__someone-looking {
@@ -795,22 +810,30 @@ body {
   .we-are-better {
     padding-bottom: 70px;
   }
-  .we-are-better__row {
-    padding: 20px 0;
-  }
   .we-are-better__title {
     font-size: 18px;
   }
-  .we-are-better__description {
-    display: none;
+  .we-are-better__item {
+    font-size: 14px;
+    width: calc(100%/2);
+  }
+  .we-are-better__item:nth-child(4) {
+    border-bottom: solid 5px #dcdcdc;
   }
 
+  .zero-rubles {
+    padding: 50px 0;
+  }
   .zero-rubles__features {
     flex-direction: column;
+  }
+  .zero-rubles__feature {
+    font-size: 50px;
   }
   .zero-rubles__feature:nth-child(odd) {
     width: 125px;
     height: 125px;
+    font-size: 24px;x
   }
   .zero-rubles__icon--plus {
     margin-top: 50px;
@@ -821,6 +844,7 @@ body {
   }
   .zero-rubles__cost {
     margin-top: 100px;
+    font-size: 34px;
   }
 
   .not-impersonal__manager {
@@ -837,7 +861,7 @@ body {
     justify-content: center;
   }
   .how-it-works__step {
-    width: calc(100%/3);
+    width: 50%;
     padding-bottom: 40px;
     font-size: 12px;
   }
@@ -870,16 +894,23 @@ body {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 445px) {
   .container {
     width: 320px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-title {
+    padding: 30px 0;
   }
 
   .vcard {
     justify-content: space-around;
+    flex-wrap: wrap;
   }
   .vcard__item.tel {
-    display: none;
+    margin: auto;
   }
 
   .request-call {
@@ -887,8 +918,8 @@ body {
   }
 
   .portfolio__item {
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
   }
   .portfolio__description {
     font-size: 18px;
@@ -898,12 +929,27 @@ body {
     font-size: 24px;
   }
 
-  .we-are-better__data {
-    width: calc(100%/3 - (1 - 1/3)*10px);
+  .our-solutions__solution-name {
+    font-size: 14px;
   }
 
-  .zero-rubles__cost {
-    font-size: 50px;
+  .we-are-better__content {
+    padding: 0;
+  }
+  .we-are-better__title {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .we-are-better__item {
+    width: 100%;
+  }
+  .we-are-better__item:nth-child(5) {
+    border-bottom: solid 5px #dcdcdc;
+  }
+
+  .recommendation__someone-looking {
+    margin: 0 0 25px 0;
+    width: 100%;
   }
 
   .not-impersonal {
