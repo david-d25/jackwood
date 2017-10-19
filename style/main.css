@@ -10,8 +10,9 @@ body {
 }
 
 .container {
-  width: 1400px;
+  max-width: 1400px;
   margin: 0 auto;
+  width: 100%;
   padding: 0 10px;
 }
 
@@ -184,7 +185,7 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .vcard .fn.org {
   font-family: "Muller";
@@ -300,15 +301,15 @@ body {
   padding-bottom: 28px;
 }
 .portfolio__item {
-  width: 350px;
-  height: 350px;
+  width: 25%;
+  padding-top: 25%;
   cursor: pointer;
   position: relative;
   background-color: gray;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  transition: .3s;
+  transition: .5s;
 }
 .portfolio__item:before {
   position: absolute;
@@ -324,7 +325,7 @@ body {
   opacity: 1;
 }
 .portfolio__item--hidden {
-  display: none;
+  padding-top: 0;
 }
 .portfolio__load-more {
   text-transform: uppercase;
@@ -608,10 +609,6 @@ body {
 }
 
 @media screen and (max-width: 1440px) {
-  .container {
-    width: 1024px;
-  }
-
   .vcard {
     margin: 0;
   }
@@ -629,11 +626,6 @@ body {
   .container--recommendation {
     padding-left: 0;
     padding-right: 0;
-  }
-
-  .portfolio__item {
-    width: 251px;
-    height: 251px;
   }
 
   .recommendation__text {
@@ -660,10 +652,6 @@ body {
 }
 
 @media screen and (max-width: 1050px) {
-  .container {
-    width: 768px;
-  }
-
   .vcard__item.workhours,
   .vcard__item.adr {
     display: none;
@@ -698,10 +686,6 @@ body {
     display: block;
   }
 
-  .portfolio__item {
-    width: 187px;
-    height: 187px;
-  }
   .portfolio__load-more {
     margin: 40px 0;
   }
@@ -746,10 +730,6 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-  .container {
-    width: 425px;
-  }
-
   .header .request-call-btn {
     display: none;
   }
@@ -896,7 +876,6 @@ body {
 
 @media screen and (max-width: 445px) {
   .container {
-    width: 320px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -917,10 +896,6 @@ body {
     width: 320px;
   }
 
-  .portfolio__item {
-    width: 150px;
-    height: 150px;
-  }
   .portfolio__description {
     font-size: 18px;
   }
