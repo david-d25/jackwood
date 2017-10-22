@@ -12,7 +12,7 @@ body {
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  width: 100%;
+  width: 95%;
   padding: 0 10px;
 }
 
@@ -259,6 +259,7 @@ body {
 }
 .recommendation__someone-looking {
   margin-bottom: 50px;
+  max-width: 50%;
 }
 .recommendation__images {
   width: 100%;
@@ -268,7 +269,7 @@ body {
 }
 .recommendation__text {
   font-size: 18px;
-  max-width: 510px;
+  max-width: 48%;
   margin-bottom: 50px;
 }
 
@@ -627,10 +628,6 @@ body {
     padding-left: 0;
     padding-right: 0;
   }
-
-  .recommendation__text {
-    max-width: 40%;
-  }
   .recommendation__image {
     width: 33%;
   }
@@ -666,6 +663,9 @@ body {
   .banner__bigtext {
     font-size: 42px;
     line-height: 52px;
+  }
+  .section-title {
+    padding: 60px 0;
   }
 
   .our-solutions__solution {
@@ -773,7 +773,9 @@ body {
   }
 
   .recommendation__someone-looking {
-    width: 200px;
+    max-width: none;
+    width: 100%;
+    margin-bottom: 0 0 15px 0;
   }
   .recommendation__text {
     font-size: 16px;
@@ -878,6 +880,7 @@ body {
   .container {
     padding-left: 0;
     padding-right: 0;
+    width: 100%;
   }
 
   .section-title {
@@ -920,11 +923,6 @@ body {
   }
   .we-are-better__item:nth-child(5) {
     border-bottom: solid 5px #dcdcdc;
-  }
-
-  .recommendation__someone-looking {
-    margin: 0 0 25px 0;
-    width: 100%;
   }
 
   .not-impersonal {
